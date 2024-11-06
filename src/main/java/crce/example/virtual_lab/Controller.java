@@ -24,12 +24,6 @@ public class Controller
     {
         return Service.saveStudent(Student_entity);
     }
-
-    /**
-     * @param name
-     * @param id
-     * @return
-     */
     @GetMapping("/login")
     public Optional<String> loginStudent(@RequestParam String name,@RequestParam Long id)
     {
